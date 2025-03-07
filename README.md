@@ -1,54 +1,48 @@
 # Hybrid_RAG_FineTuned_LLM_using_NFL Draft Player 
 
-This repository contains a Python script that scrapes NFL Draft player data from NFL Draft Buzz, processes the data, and enables retrieval of player insights using a language model.
+# NFL Draft Player Scraper
 
-Features
+This repository contains a Python script that scrapes NFL Draft player data from [NFL Draft Buzz](https://www.nfldraftbuzz.com), processes the data, and enables retrieval of player insights using a language model.
 
-Scrapes player details, including name, position, team, strengths, weaknesses, and scouting report summary.
+## Features
+- Scrapes player details, including name, position, team, strengths, weaknesses, and scouting report summary.
+- Saves data into a structured CSV file.
+- Uses FAISS for efficient similarity search based on player scouting reports.
+- Implements a language model (GPT-2) to generate insights based on player attributes.
 
-Saves data into a structured CSV file.
-
-Uses FAISS for efficient similarity search based on player scouting reports.
-
-Implements a language model (GPT-2) to generate insights based on player attributes.
-
-Requirements
-
+## Requirements
 To run this script, install the required dependencies:
 
+```sh
 pip install requests beautifulsoup4 pandas faiss-cpu torch transformers sentence-transformers datasets
+```
 
-Usage
-
+## Usage
 Run the script using:
 
+```sh
 python nfl_draft_scraper.py
+```
 
-Data Processing
+### Data Processing
+- The script scrapes player data from multiple pages.
+- The collected data is saved as `nfl_players_data.csv`.
+- The data is processed to extract structured player information.
 
-The script scrapes player data from multiple pages.
-
-The collected data is saved as nfl_players_data.csv.
-
-The data is processed to extract structured player information.
-
-Retrieval & AI Model
-
-FAISS index is built for similarity search.
-
-The model can generate answers based on player scouting reports.
+### Retrieval & AI Model
+- FAISS index is built for similarity search.
+- The model can generate answers based on player scouting reports.
 
 Example query:
-
+```python
 query = "Tell me about players with strong upper body strength."
 answer = generate_answer(query)
 print("Q:", query)
 print("A:", answer)
+```
 
-Output
-
+## Output
 The output includes:
+- CSV file with player scouting data.
+- AI-generated insights based on scouting reports.
 
-CSV file with player scouting data.
-
-AI-generated insights based on scouting reports.
