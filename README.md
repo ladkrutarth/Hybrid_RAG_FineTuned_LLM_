@@ -1,4 +1,4 @@
-# Hybrid_RAG_FineTuned_LLM_
+# Hybrid_RAG_FineTuned_LLM_using_NFL Draft Player 
 
 This repository contains a Python script that scrapes NFL Draft player data from NFL Draft Buzz, processes the data, and enables retrieval of player insights using a language model.
 
