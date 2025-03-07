@@ -2,7 +2,7 @@
 
 # NFL Draft Player Scraper
 
-This repository contains a Python script that scrapes NFL Draft player data from [NFL Draft Buzz](https://www.nfldraftbuzz.com), processes the data, and enables retrieval of player insights using a language model.
+This repository contains a Python script that scrapes NFL Draft player data from [NFL Draft Buzz](https://www.nfldraftbuzz.com/positions/ALL/1/2025), processes the data, and enables retrieval of player insights using a language model.
 
 ## Features
 - Scrapes player details, including name, position, team, strengths, weaknesses, and scouting report summary.
