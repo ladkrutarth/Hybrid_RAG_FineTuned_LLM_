@@ -41,8 +41,20 @@ print("Q:", query)
 print("A:", answer)
 ```
 
+### Example Output
+```
+Player 1: Travis Hunter
+Player 2: Mason Graham
+Player 3: Ashton Jeanty
+Q: Tell me about players with strong upper body strength.
+A: Possesses rare blend of twitch and fluidity that allows him to mirror receivers in man coverage... 
+```
+
 ## Output
 The output includes:
 - CSV file with player scouting data.
 - AI-generated insights based on scouting reports.
+
+
+
 
